@@ -1,0 +1,71 @@
+.spin {
+  animation: spin 2s ease-in-out infinite;
+  height: 50px;
+  width: 50px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50%;
+  height: 50%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  position: relative; /* Make the section the reference point for the box */
+  overflow: hidden; /* Ensure the box does not overflow the section */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 5px solid blue;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+
+.load-container {
+  display: flex;
+  background-color: grey;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: moveBox 20s linear infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 50px);
+  }
+  50% {
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+  }
+  75% {
+    top: calc(100% - 50px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

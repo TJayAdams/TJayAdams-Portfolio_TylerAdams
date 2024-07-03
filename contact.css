@@ -1,0 +1,35 @@
+*{
+    background-color: #161616;
+}
+header {
+    font-family: Poopins;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+    padding: 32px 142px;
+  }
+  .header-title {
+    color: white;
+    font-size: 50px;
+  }
+  .home-btn {
+    font-size: medium;
+    color: #03adea;
+  }
+  header ul {
+    font-family: "Poppins";
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+  }
+    .header-content{
+        width: 1440px;
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+        justify-content: space-between;
+    }
