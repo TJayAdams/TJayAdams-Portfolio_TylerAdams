@@ -1,84 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	<link rel="stylesheet"  href="./index.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
-  	
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <title>Tyler Adams</title>
+  </head>
+  <body>
     <header>
-        <p class="header-title hover">.Tyler</p>
-        <ul class="nav-link">
-            <li class="home-btn"><a href="./index.html">Home</a></li>
-            <li><a>About</a></li>
-            <li><a href="./work.html">Work</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+      <div>
+        <p class="header-title">.Tyler</p>
+
+        <input type="checkbox" id="mode" />
+        <label for="mode">
+          <div class="label">
+            <img src="./images/sun.svg" />
+            <img src="./images/moon.svg" />
+          </div>
+        </label>
+      
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link home-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./aboutMe.html" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="./work.html" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
     </header>
-  
-	
-  	<div class="home">
-    		<div class="hero-section">
-      			<div class="left">
-        				<div class="contents">
-          					<div class="contents1">
-            						<div class="intro">
-              							<div class="hi-im-tyler-container">
-                								<p class="hi-im">Hi, I’m </p>
-                								<p class="hi-im">Tyler Adams</p>
-              							</div>
-              							<div class="fullstack-developer">Full-Stack Developer | QA Test Analyst</div>
-            						</div>
-            						<div class="hi-im-tyler">Hi, I'm Tyler Adams, a Full-Stack developer and Software Tester with a passion for crafting visually stunning and highly functional websites. With a keen eye for detail and a strong grasp of both front-end and back-end technologies.</div>
-          					</div>
-          					<div class="bttns">
-            						<div class="main-button">
-              							<div class="button-centered">
-                								<div class="button-text">Hire Me</div>
-              							</div>
-            						</div>
-            						<div class="main-button1">
-              							<div class="button-centered1">
-                								<div class="button-text">Lets Talk</div>
-              							</div>
-            						</div>
-          					</div>
-        				</div>
-						<div class="right">
-							<div>			
-								<img class="profile_pic" alt="" src="./images/tyler_profile-removebg-preview.png">
-								
-						  </div>
-						</div>
-                        <footer>
-                            <div class="social">
-          					<div class="button-text">Find Me On</div>
-          					<div class="social1">
-            						<img class="fi-brands-icon" alt="" src="./images/Facebook_icon.svg">
-            						
-            						<img class="fi-brands-icon" alt="twitter" src="./images/fi-brands-twitter-alt.svg">
-            						
-            						<img class="fi-brands-icon" alt="" src="./images/Group (2).svg">
-            						
-            						<img class="fi-brands-icon" alt="" src="./images/Group.svg">
-            						
-            						<img class="fi-brands-icon" alt="" src="./images/dribbble.svg">
-            						
-          					</div>
-        				</div>
-      			</div>
-            </footer>
-        	
-    		
-  	</div>
-  	
-  	
-  	
-  	
-</body>
+    <main class="home">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="hero-content">
+            <div class="intro">
+              <p class="intro-text">Hi, I’m</p>
+              <h1 class="intro-name">Tyler Adams</h1>
+              <p class="intro-role">Full-Stack Developer | QA Test Analyst</p>
+            </div>
+            <p class="hero-description">
+              Hi, I'm Tyler Adams, a Full-Stack developer and Software Tester
+              with a passion for crafting visually stunning and highly
+              functional websites and applications. With a keen eye for detail and a strong grasp
+              of both front-end, back-end and software testing technologies.
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn primary-btn">Hire Me</a>
+              <a href="#" class="btn secondary-btn">Let's Talk</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img
+            class="profile-pic"
+            src="./images/tyler_profile-removebg-preview.png"
+            alt="Profile Picture of Tyler Adams"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <p class="social-text">Find Me On</p>
+        <div class="social-icons">
+          <img
+            src="./images/Facebook_icon.svg"
+            alt="Facebook"
+            class="social-icon"
+          />
+          <img
+            src="./images/fi-brands-twitter-alt.svg"
+            alt="Twitter"
+            class="social-icon"
+          />
+          <img src="./images/GitHub.svg" alt="Group" class="social-icon" />
+          <img src="./images/Group.svg" alt="Group" class="social-icon" />
+          <img src="./images/dribbble.svg" alt="Dribbble" class="social-icon" />
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
-
-
