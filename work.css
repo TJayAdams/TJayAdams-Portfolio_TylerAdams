@@ -21,6 +21,71 @@ header {
   font-weight: 700;
 
 }
+/** style the mode checkbox **/
+label {
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  border-radius: 30px;
+  display: block;
+  background-color: rgb(61, 60, 60);
+
+  /* background-color: rgb(135, 131, 131); */
+}
+
+label::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: rgb(158, 154, 154);
+
+  box-shadow: inset 0px 5px 10px rgb(61, 61, 61);
+  transition: 0.3s;
+}
+
+label img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.moon {
+  left: 10px;
+
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+.sun {
+  right: 10px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+#mode {
+  display: none;
+}
+
+#mode:checked + label {
+  background-color: rgb(118, 117, 117);
+}
+
+#mode:checked + label::after {
+  left: 42px;
+  
+  background-color: #839D9A;
+}
+
+/*-----------------------------------------------*/
 
 .nav-links {
   display: flex;

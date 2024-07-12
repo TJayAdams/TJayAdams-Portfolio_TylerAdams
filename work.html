@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
     <link rel="stylesheet" href="work.css" />
+    <link rel="stylesheet" href="index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -14,7 +16,15 @@
   </head>
   <body>
     <header>
-      <p class="header-title">.Tyler</p>
+      <div>
+        <div id="logo" class="header-title-container"><p class="header-title glow">.Tyler</p></div>
+        <input type="checkbox" id="mode" />
+        <label for="mode">
+          <img class="moon" src="./images/moon.svg" />
+          <img class="sun" src="./images/sun.svg" />  
+        </label>
+      </div>
+
       <ul class="nav-links">
         <li class="nav-item">
           <a href="./index.html" class="nav-link home-link">Home</a>
@@ -133,5 +143,6 @@
         </div>
       </footer>
     </section>
+    <script src="./index.js"></script>
   </body>
 </html>
